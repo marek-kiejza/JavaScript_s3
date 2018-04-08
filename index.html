@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Marek Kejza
+Software Developer
+s00173510
+14/12/2017
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+<title>DevStyle</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+   
+
+<link rel="stylesheet" href="MKcss.css" type="text/css" />
+
+<link rel="stylesheet" href="styles/styleSlides.css" type="text/css" />
+ 
+       <style>
+   
+        
+        body {
+      -webkit-font-smoothing: antialiased;
+      font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #232525;
+      padding-top:70px;
+           
+    }
+
+    #slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:5px;
+    }
+
+    a.slidesjs-next,
+    a.slidesjs-previous,
+    a.slidesjs-play,
+    a.slidesjs-stop {
+      background-image: url(images/btns-next-prev.png);
+      background-repeat: no-repeat;
+      display:block;
+      width:12px;
+      height:18px;
+      overflow: hidden;
+      text-indent: -9999px;
+      float: left;
+      margin-right:5px;
+    }
+
+    a.slidesjs-next {
+      margin-right:10px;
+      background-position: -12px 0;
+    }
+
+    a:hover.slidesjs-next {
+      background-position: -12px -18px;
+    }
+
+    a.slidesjs-previous {
+      background-position: 0 0;
+    }
+
+    a:hover.slidesjs-previous {
+      background-position: 0 -18px;
+    }
+
+    a.slidesjs-play {
+      width:15px;
+      background-position: -25px 0;
+    }
+
+    a:hover.slidesjs-play {
+      background-position: -25px -18px;
+    }
+
+    a.slidesjs-stop {
+      width:18px;
+      background-position: -41px 0;
+    }
+
+    a:hover.slidesjs-stop {
+      background-position: -41px -18px;
+    }
+
+    .slidesjs-pagination {
+      margin: 7px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(images/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+       
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+  </style>
+</head>
+<body id="top" >
+ 
+   
+<h1 id="devstyle">DevStyle</h1>
+<!-- code to wrap all page -->
+    
+<div id="bigWrap">
+    
+<div class="wrapper col1">
+    
+    
+  
+    
+    
+  <div id="topbar">
+   
+    <div id="social" >
+      <ul>
+        <li id="cos"><a href="#"><img src="images/bookmarks/rss.jpg" width="25" height="25" alt="" /></a></li>
+        <li><a href="#"><img src="images/bookmarks/facebook.jpg" width="25" height="25" alt="Add to: Facebook" /></a></li>
+        <li><a href="#"><img src="images/bookmarks/delicious.jpg" width="25" height="25" alt="Del.icio.us" /></a></li>
+        <li><a href="#"><img src="images/bookmarks/stumbleupon.jpg" width="25" height="25" alt="Stumbleupon" /></a></li>
+        <li><a href="#"><img src="images/bookmarks/reddit.jpg" width="25" height="25" alt="reddit" /></a></li>
+        <li><a href="#"><img src="images/bookmarks/digg.jpg" width="25" height="25" alt="Digg" /></a></li>
+        <li><a href="#"><img src="images/bookmarks/yahoo.jpg" width="25" height="25" alt="Y! MyWeb" /></a></li>
+        <li class="last"><a href="#"><img src="images/bookmarks/google.jpg" width="25" height="25" alt="Google" /></a></li>
+      </ul>
+    </div>
+    <div id="search" >
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Site Search</legend>
+          <input id="facebook" type="text" value="You like facebook?"  onfocus="this.value=(this.value=='Search the site&hellip;')? '' : this.value ;" />
+          <a id="gobtn" href="#"><input name="go"  id="go" value="GO" type="button"/></a>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+<div id='styleChang1' class="wrapper col2">
+  <div id="header"  >
+    <div class="fl_left">
+      <h1 >DevStyle</h1>
+      <p>World in the eyes of a programmer</p>
+    </div>
+    <ul id="topnav">
+      <li class="last" id='manu' ><a  href="#"><p id='x' >Slideshow</p></a></li>
+      <li><a href="#">Style</a>
+        <ul>
+          <li><a id="styleChanger1" href="#">Link 1</a></li>
+          <li><a  id="styleChanger2" href="#">Link 2</a></li>
+         
+        </ul>
+      </li>
+        
+      <li><a href="mustHave.html">Must Have</a></li>
+      <li><a href="jobs.html">Jobs</a></li>
+      <li class="active"><a href="index.html">Home</a></li>
+    </ul>
+    <br class="clear" />
+  </div>
+</div>
+<div id='styleChang2' class="wrapper col3">
+  <div id="intro">
+    <ul >
+      <li >
+        <p class="imgholder" id="img1"><img id='imgSlide' src="images/demo/csharp.png" width="215" height="215"  alt="" /></p>
+        <h2>C#</h2>
+        <p>C# is a general-purpose, object-oriented programming language.Its development team is led by Anders Hejlsberg.</p>
+        <p class="readmore"><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">Continue Reading &raquo;</a></p>
+      </li>
+      <li>
+        <p class="imgholder" ><img src="images/demo/javascript.png" width="215" height="215"  alt="" /></p>
+        <h2>JavaScript</h2>
+        <p>JavaScript often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language.</p>
+        <p class="readmore"><a href="https://en.wikipedia.org/wiki/JavaScript">Continue Reading &raquo;</a></p>
+      </li>
+      <li>
+        <p class="imgholder"><img src="images/demo/python.png" width="215" height="215"  alt="" /></p>
+        <h2>Python</h2>
+        <p>Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. </p>
+        <p class="readmore"><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Continue Reading &raquo;</a></p>
+      </li>
+      <li class="last">
+        <p class="imgholder"><img src="images/demo/java.png" width="215" height="215"  alt="" /></p>
+        <h2>Java</h2>
+        <p>Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.</p>
+        <p class="readmore"><a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Continue Reading &raquo;</a></p>
+      </li>
+    </ul>
+    <br class="clear" />
+    </div>
+    
+     <div class="container">
+    <div id="slides">
+        
+        
+        
+     <img src="images/example-slide-1.jpg"  height="500">
+        
+        
+        
+        
+      <img src="images/example-slide-2.jpg" >
+      <img src="images/example-slide-3.jpg">
+      <img src="images/example-slide-4.jpg">
+    </div>
+  </div>
+   </div> 
+   
+<div class="wrapper col4">
+  <div id="container">
+    <div id="services">
+      <ul>
+        <li>
+          <h2>NET Framework</h2>
+          <div class="imgholder"><a href="#!"><img src="images/demo/net.png" width="240" height="190" alt="" /></a></div>
+          <p id="p1">NET Framework (pronounced dot net) is a software framework developed by Microsoft that runs primarily on Microsoft Windows. It includes a large class library named Framework Class Library (FCL) and provides language interoperability (each language can use code written in other languages) across several ...</p>
+          <p class="more"><a href="https://en.wikipedia.org/wiki/.NET_Framework">Continue Reading &raquo;</a></p>
+        </li>
+        <li>
+          <h2>jQuery</h2>
+          <div class="imgholder"><a href="#!"><img src="images/demo/jquery.png" width="240" height="190" alt="" /></a></div>
+          <p id="p2">jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It is free, open-source software using the permissive MIT License. Web analysis indicates that it is the most widely deployed JavaScript library by a large margin. jQuery's syntax is designed to make it easier to navigate a ...</p>
+          <p class="more"><a href="https://en.wikipedia.org/wiki/JQuery">Continue Reading &raquo;</a></p>
+        </li>
+        <li class="last">
+          <h2>Spring Framework</h2>
+          <div class="imgholder"><a href="#!"><img src="images/demo/spring.png" width="240" height="190" alt="" /></a></div>
+          <p id="p3">The Spring Framework is an application framework and inversion of control container for the Java platform. The framework's core features can be used by any Java application, but there are extensions for building web applications on top of the Java EE (Enterprise Edition) platform. Although the framework does not impose ...</p>
+          <p class="more"><a href="https://en.wikipedia.org/wiki/Spring_Framework">Continue Reading &raquo;</a></p>
+        </li>
+      </ul>
+      <br class="clear" />
+    </div>
+    <div id="content">
+         
+
+      
+      <h1 id="weatherBtn"> GET THE WEATHER</h1>
+       <div id="result" style="display: none">
+    <div id="icon"></div>
+    <div id="city"><strong></strong></div>
+    <div id="weather"></div>
+    <div id="time"></div>
+   
+      </div>
+    </div>
+    <div id="column">
+      <div class="subnav">
+       <img width="300px" src="https://lh3.googleusercontent.com/S3VC4teFhciXsOru8jgC0dypDLev_56T5N7PGL80-3EPw_u86fmBTWF6BQv68LGwtlg=h900">
+      </div>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<div class="wrapper col5">
+  <div id="footer">
+   
+    
+</div> 
+<div class="wrapper col6">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2017 - Marek Kiejza - S00173510</p>
+
+   
+  </div>
+</div>
+</div>
+</div><!--Big Wrap _END-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="scripts/jquery.slides.min.js"></script>
+
+    
+    
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/jquery.backtotop.js"></script>
+<script src="scripts/jquery.mobilemenu.js"></script>
+<script src="scripts/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="MKscript.js"></script>
+    
+  
+    
+   <!-- SlidesJS Required: Start Slides -->
+  
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="scripts/jquery.slides.min.js"></script>
+  
+</body>
+</html>
+<!--
+Template Name: AquaBusiness
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
